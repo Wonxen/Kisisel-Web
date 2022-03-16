@@ -1,0 +1,89 @@
+#loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 16px solid #f2f2f2;
+    margin: -76px 0 0 -76px;
+    border-top: 16px solid #ff3300;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+#myDiv {
+    display: none;
+    text-align: center;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: url(image/arka.png);
+    background-size: cover;
+}
+.box{
+    width: 400px;
+    background: #a45411; 
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    margin: auto;
+    margin-top: 5%;
+    color: #fff;
+    font-family: sans-serif;
+}
+.box img{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.box img:hover{
+    transform: scale(0.9);
+}
+.box h1{
+    font-size: 40px;
+    letter-spacing: 4px;
+    font-weight: 100;
+}
+.box h5{
+    font-size: 20px;
+    font-weight: 100;
+    letter-spacing: 3px;
+}
+.box p{
+    text-align: justify;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+.box li{
+   display: inline-block;
+   margin: 6px;
+   list-style: none; 
+}
+.box li a{
+    color: white;
+    font-size: 30px;
+    transition: all ease-in-out 250ms;
+}
+.box li a:hover{
+    color: #b9b9b9;
+}
